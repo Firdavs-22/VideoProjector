@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart-Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cart-card {
+            border: gray solid 2px;
+            border-radius: 1rem;
+            width: 26rem;
+            height: 6rem;
+            overflow: hidden;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            background: #fff;
+        }
+        .cart-img {
+            object-fit: contain;
+            flex: 1 1 0;
+            margin-right: .4rem;
+            margin-left: .1rem;
+        }
+        .cart-title {
+            font-weight: 500;
+            font-size: 1.4rem;
+            flex: 4 1 0;
+            padding-left: .2rem;
+            padding-top: .1rem;
+        }
+
+        .cart-main {
+            flex: 5 1 0;
+            font-weight: 400;
+            font-size: 1.2rem;
+            align-items: center;
+        }
+
+        .cart-content {
+            flex: 8 1 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-aside {
+            flex: 4 1 0;
+        }
+
+        .cart-price {
+            padding-left: .2rem;
+            flex: 3 1 0;
+        }
+
+        .cart-counter {
+            flex: 4 1 0;
+        }
+
+        .cart-total-title {
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding-top: .2rem;
+            flex: 4 1 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cart-total-price {
+            flex: 5 1 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        .cart-total {
+            flex: 2 1 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-remove {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 0;
+            color: red;
+            font-size: 1.3rem;
+
+        }
+
+        .cart-price-curr,
+        .total-curr{
+            margin-left: .1rem;
+        }
+
+        .cart-main,
+        .cart-price,
+        .cart-counter,
+        .cart-total-price,
+        .cart-aside {
+            display: flex;
+        }
+
+        .subtract {
+            border-top: 1px gray solid;
+            border-left: 1px gray solid;
+            border-bottom: 1px gray solid;
+            border-top: 1px gray solid;
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .1rem .3rem;
+            font-size: 1rem;
+            color: orangered;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .count {
+            border: 1px gray solid;
+            padding: .1rem .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .append {
+            font-size: 1rem;
+            border-top: 1px gray solid;
+            border-right: 1px gray solid;
+            border-bottom: 1px gray solid;
+            border-top: 1px gray solid;
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .1rem .3rem;
+            color: green;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .append:hover{
+            color: lightgreen;
+        }
+
+        .append:hover,
+        .subtract:hover {
+            background: #9daabb;
+            font-size: 1.3rem;
+        }
+
+        .remove-button {
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .remove-button:hover {
+            scale: 1.3;
+        }
+
+        .remove-button:active {
+            scale: 1.1;
+        }
+
+        .append:active,
+        .subtract:active {
+            background: #79889a;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart-card">
+        <img src="./../img/1.jpg" alt="img" class="cart-img">
+        <div class="cart-content">
+            <div class="cart-title">Test1</div>
+            <div class="cart-main">
+                <div class="cart-price">
+                    <div class="cart-price-value">1</div>
+                    <div class="cart-price-curr">$</div>
+                </div>
+                <div class="cart-counter">
+                    <div class="subtract"><i class="fa-solid fa-minus"></i></div>
+                    <div class="count">1</div>
+                    <div class="append"><i class="fa-solid fa-plus"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-aside">
+            <div class="cart-total">
+                <div class="cart-total-title">total</div>
+                <div class="cart-total-price">
+                    <div class="total-value">100</div>
+                    <div class="total-curr">$</div>
+                </div>
+            </div>
+            <div class="cart-remove"><div class="remove-button"><i class="fa-solid fa-trash"></i></div></div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

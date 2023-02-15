@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Optoma CINEMAX-D2-W",
+    "desc": "4K UHD 3000 Lumens Projector",
+    "price": 2499,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 2,
+    "name": "Optoma CINEMAX-D2-SMART-B",
+    "desc": "4K UHD 3000 Lumens Projector",
+    "price": 2699,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sony Re-Furbished VPL-PHZ50 5000-Lumen",
+    "desc": "WUXGA CorporateEducation Laser 3LCD Projector",
+    "price": 1695,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 4,
+    "name": "ViewSonic LS831WU 4500lm",
+    "desc": "WUXGA Ultra-Short Throw Laser Projector",
+    "price": 2499.99,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 5,
+    "name": "NEC NP-ME453X 4500-Lumen",
+    "desc": "XGA LCD Projector",
+    "price": 859,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 6,
+    "name": "LG BF50NST ProBeam 5000-Lumen",
+    "desc": "WUXGA Laser DLP Smart Projector",
+    "price": 2399,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 7,
+    "name": "Optoma ZW400 4000lm",
+    "desc": "WXGA Laser DLP Presentation Projector",
+    "price": 979,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 8,
+    "name": "Sony VPL-FHZ91L/W 9000 Lumens",
+    "desc": "WUXGA Laser Projector (White)",
+    "price": 979,
+    "curr": "$",
+    "imgFormat": "jpg"
+  },
+  {
+    "id": 9,
+    "name": "Certified Used Casio Laser XJ-M141",
+    "desc": "Signature Series XGA 2500lm Multi-Media Projector w/ HDMI",
+    "price": 59,
+    "curr": "$",
+    "imgFormat": "jpg"
+  }
+]

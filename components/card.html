@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border: #000 solid 2px;
+            border-radius: 1rem;
+            width: 17rem;
+            height: 20rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card-img {
+            height: 50%;
+            object-fit: contain;
+            flex: 16 1 0;
+        }
+
+        .card-content {
+            flex: 6 1 0;
+            padding: .3rem;
+        }
+
+        .card-title {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .card-desc {
+            font-weight: 400;
+            font-size: .8rem;
+            color: gray;
+        }
+
+        .card-footer {
+            flex: 3 1 0;
+            padding: .3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .card-price {
+            display: flex;
+        }
+
+        .card-price-curr {
+            margin-left: .1rem;
+        }
+
+        .card-button {
+            border: lightgray 1px solid;
+            background: #5ddfdf;
+            width: 4rem;
+            height: 1.8rem;
+            border-radius: 1rem;
+            text-align: center;
+            line-height: 1.7rem;
+            transition: .2s;
+            cursor: pointer;
+        }
+
+        .card-button:hover {
+            scale: 1.07;
+            background: #4dd5d5;
+        }
+
+        .card-button:active {
+            scale: 1;
+            background: #5dffff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="../img/5.jpg" class="card-img" alt="">
+        <div class="card-content">
+            <div class="card-title">Test</div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, quod.</div>
+        </div>
+        <div class="card-footer">
+            <div class="card-price">
+                <div class="card-price-value">1</div>
+                <div class="card-price-curr">$</div>
+            </div>
+            <div class="card-button">Buy</div>
+        </div>
+    </div>
+</body>
+</html>
