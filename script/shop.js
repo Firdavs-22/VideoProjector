@@ -111,7 +111,7 @@ class ProductItem {
         card_footer.appendChild(card_price)
 
         let card_button = this.createElement("div", "card-button")
-        card_button.innerText = "Add t  o Cart"
+        card_button.innerText = "Add to Cart"
         card_button.addEventListener("click", (e) => this.buttonEvent())
 
         card_footer.appendChild(card_button)
