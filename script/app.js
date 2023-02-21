@@ -3,4 +3,5 @@ import Shop from "./../script/shop.js"
 
 const productDOM = document.getElementById("product")
 const cartDOM = document.getElementById("cart-products")
-const shop = new Shop(productJson,productDOM,cartDOM);
+const totalDOM = document.getElementById("total-card")
+const shop = new Shop(productJson,productDOM,cartDOM,totalDOM);

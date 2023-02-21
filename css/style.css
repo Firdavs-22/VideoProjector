@@ -164,7 +164,8 @@ body {
 }
 .cart-title {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.1;
     flex: 4 1 0;
     padding-left: .2rem;
     padding-top: .1rem;
@@ -173,7 +174,7 @@ body {
 .cart-main {
     flex: 5 1 0;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     align-items: center;
 }
 
@@ -210,7 +211,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .cart-remove {
@@ -360,6 +361,11 @@ body {
 
 .total-value {
     margin-right: .1rem;
+}
+
+#cart-products .total-value ,
+.cart-price-value {
+    font-weight: 500;
 }
 
 .total-button {
