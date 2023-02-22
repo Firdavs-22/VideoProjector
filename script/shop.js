@@ -4,11 +4,18 @@ export default class Shop {
         this.cart = undefined;
     }
 
-    constructor(products, productDOM, cartDOM, totalDOM) {
+    constructor(products, productDOM, cartDOM, totalDOM,buy) {
         this.init()
         this.cart = new Cart(cartDOM, totalDOM)
         this.products = new Products(products, productDOM, this.cart)
         this.render()
+
+        buy.addEventListener("click",() => {
+            if (this.cart.products.length) {
+                this.cart.buy();
+                alert("You are buy")
+            }
+        })
     }
 
     render() {
@@ -137,6 +144,12 @@ class Cart {
         this.init()
         this.DOM = DOM
         this.total = total
+    }
+
+    buy(){
+        this.products = []
+        this.DOM.innerText = ''
+        this.calculateTotal()
     }
 
     render(products) {
