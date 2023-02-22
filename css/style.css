@@ -81,6 +81,7 @@ body {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin: .5rem .1rem 1rem .1rem;
+    transition: .2s;
 }
 
 .card-img {
@@ -137,6 +138,10 @@ body {
     word-spacing: -0.1rem;
 }
 
+.card:hover {
+    scale: 1.1;
+}
+
 .card-button:hover {
     scale: 1.07;
     background: #4dd5d5;
@@ -158,6 +163,11 @@ body {
     background: #fff;
     margin-top: .5rem;
     margin-bottom: .7rem;
+    transition: .2s;
+}
+
+.cart-card:hover {
+    scale: 1.05;
 }
 .cart-img {
     object-fit: contain;
